@@ -4,6 +4,7 @@ const bodyParser = require("body-parser")
 const app = express()
 
 require('./routes/views')(app)
+require('./routes/api')(app)
 require('./routes/special')(app)
 
 app.use( logger("dev"))
